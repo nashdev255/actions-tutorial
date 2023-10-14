@@ -3,7 +3,7 @@ Learn GitHub Actions, one of the CI/CD environment.
 
 ### Get Started
 Make workflows directory in .github/ and add .yml file with arbitrary name. Look the code below which test the C++ code automatically.
-```
+```.cpp:.github/main.yml
 name: C++ Test Workflow
 
 on:
