@@ -10,10 +10,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     
     - name: Set up C++ build environment
-      uses: actions/setup-cpp@v1
+      uses: Trass3r/setup-cpp@master
       with:
         compiler: g++
     
