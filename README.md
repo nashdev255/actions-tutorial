@@ -1,5 +1,6 @@
 # Actions Tutorial
 Learn GitHub Actions, one of the CI/CD environment.
+You can learn it by yourself too, with reliable doc [GitHub Actions documentation](https://docs.github.com/en/actions).
 
 ### Get Started
 Make workflows directory in .github/ and add .yml file with arbitrary name. Look the code below which test the C++ code automatically.
@@ -30,3 +31,5 @@ jobs:
       run: ./forAutoTesting
 
 ```
+`name: C++ Test Workflow` set the name of Workflow.
+`on: -push` set when will the jobs start.
