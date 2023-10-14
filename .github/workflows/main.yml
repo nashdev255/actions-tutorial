@@ -1,0 +1,24 @@
+name: C++ Test Workflow
+
+on:
+  - push
+
+jobs:
+  build:
+    name: AutoTesting
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Set up C++ build environment
+      uses: actions/setup-cpp@v1
+      with:
+        compiler: g++
+    
+    - name: Build C++ program
+      run: g++ src.cpp -o forAutoTesting
+    
+    - name: Run C++ program
+      run: ./forAutoTesting
